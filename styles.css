@@ -1,9 +1,12 @@
 body {
-    width: 1800px;
-    height: 910px;
-
-    background: linear-gradient(180deg, #0E1A44 0%, rgba(52, 96, 250, 0.68) 100%);
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #0e1a44 0%, rgba(52, 96, 250, 0.68) 100%);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -394,3 +397,28 @@ border-radius: 40%;
 .hhoo {
     margin-top: -2rem;
 }
+
+@media screen and (max-width: 1366px) {
+    body {
+        width: 1366px;
+        height: 100%;
+        background-repeat: repeat;
+
+    }
+
+    .container {
+        width: 1366px;
+    }
+
+    .first {
+        width: 1000px;
+
+    }
+
+    .rules-div {
+        position: absolute;
+    right:-55px;
+    bottom: 1rem;
+    }
+
+    }
