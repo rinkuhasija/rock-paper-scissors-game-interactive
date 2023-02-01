@@ -135,7 +135,7 @@ function random1() {
             h1.innerText = 'DRAW';
         } else {
 
-            h1.innerText = 'YOU LOSE AGAINST PC';
+            h1.innerText = 'YOU LOST AGAINST PC';
             ele.classList.add('HoverClass2');
         }
         ele.style.visibility = 'visible';
@@ -170,7 +170,7 @@ function random1() {
             h1.innerText = 'DRAW';
         } else if (ele === rock2) {
 
-            h1.innerText = 'YOU LOSE AGAINST PC';
+            h1.innerText = 'YOU LOST AGAINST PC';
             ele.classList.add('HoverClass2');
         } else {
 
@@ -205,7 +205,7 @@ function random1() {
         middle.style.top = '22rem';
 
         if (ele === scissor2) {
-            h1.innerText = 'YOU LOSE AGAINST PC';
+            h1.innerText = 'YOU LOST AGAINST PC';
             ele.classList.add('HoverClass2');
         } else if (ele === rock2) {
 
