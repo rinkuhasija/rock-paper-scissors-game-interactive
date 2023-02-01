@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="first">
+            <span>
+                <p id="first-p">
+                    ROCK
+                    PAPER
+                    SCISSORS
+                </p>
+            </span>
+
+            <div class="first-div">
+                <p> Your Score</p>
+                <h1 id="score_display"> 0 </h1>
+            </div>
+        </div>
+        <br> <br>
+
+        <div class="for_flex">
+
+
+            <div class="game">
+
+                <span id="left"> YOU PICKED </span>
+                <span id="right"> PC PICKED </span>
+
+                <div class="main-1">
+
+
+                    
+                    <div class="scissor" id="ss" onclick="scissorFun()">
+                        <img src="./images/17911 1.png" alt="scissor-image" class="src">
+                    </div>
+
+                    <div class="line-1">
+                        <img src="./images/Line 1.png" alt="line-1">
+                    </div>
+
+                    <div class="line-2">
+                        <img src="./images/Line 2.png" alt="line-2">
+                    </div>
+
+                    <div class="rock" onclick="rockFun()">
+                        <img src="./images/icons8-fist-67 1.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="main-2">
+
+                    <div class="line-3">
+                        <img src="./images/Line 3.png" alt="line-3">
+                    </div>
+                    <div class="paper" onclick="paperFun()">
+                        <img src="./images/icons8-hand-64 1.png" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="appear">
+
+                <div class="middle">
+                    <h1 class="h1"> YOU WIN AGAINST PC</h1>
+                    <br><br><br>
+                    <button onclick="playAgain()"> PLAY AGAIN </button>
+                </div>
+
+                <div id="appear-1">
+                    <div class="scissor">
+                        <img src="./images/17911 1.png" alt="scissor-image" class="src">
+                    </div>
+
+                    <div class="rock">
+                        <img src="./images/icons8-fist-67 1.png" alt="">
+                    </div>
+
+                    <div class="paper">
+                        <img src="./images/icons8-hand-64 1.png" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rules-div">
+            <div class="open-rules">
+                <button onclick="close_rules()"> <span> X </span> </button>
+                <div class="hhoo">
+                    <h2>Game Rules</h2>
+                    <ul class="span">
+                        <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li> <br>
+                        <li><span>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or
+                                just “rock, paper, scissors.”</span></li> <br> <br>
+                        <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the
+                                time”</span></li> <br> <br>
+                        <li><span>If both players lay down the same hand, each player lays down another
+                                hand</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rule-btn" onclick="rules()"> <span id="rules_spn"> RULES </span> </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
