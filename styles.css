@@ -270,6 +270,33 @@ visibility: hidden;
 
 }
 
+
+.blink-soft {
+    animation: blinker 1.5s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+#try_again {
+    margin-top: 26px;
+    margin-left: 44px;
+width: 99px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0.1em;
+
+color: #FAF2F2;
+
+}
+
 .rules-div {
     position: absolute;
     right: 20px;

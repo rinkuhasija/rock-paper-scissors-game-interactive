@@ -5,6 +5,7 @@ let leftText = document.getElementById('left');
 let rightText = document.getElementById('right');
 let initScore = 0;
 let score = document.getElementById('score_display');
+let try_again = document.getElementById('try_again');
 
 let rock2 = document.getElementsByClassName('rock')[1];
 let paper2 = document.getElementsByClassName('paper')[1];
@@ -133,6 +134,7 @@ function random1() {
             score.innerText = initScore;
         } else if (ele === rock2) {
             h1.innerText = 'DRAW';
+            try_again.innerText = 'TRY AGAIN';
         } else {
 
             h1.innerText = 'YOU LOST AGAINST PC';
@@ -168,6 +170,7 @@ function random1() {
 
 
             h1.innerText = 'DRAW';
+            try_again.innerText = 'TRY AGAIN';
         } else if (ele === rock2) {
 
             h1.innerText = 'YOU LOST AGAINST PC';
@@ -216,6 +219,7 @@ function random1() {
         } else {
 
             h1.innerText = 'DRAW';
+            try_again.innerText = 'TRY AGAIN';
         }
         ele.style.visibility = 'visible';
         middle.style.visibility = 'visible';
@@ -270,6 +274,8 @@ function playAgain() {
     paper.style.left = '1rem'
     paper.style.bottom = '0rem'
     paper.setAttribute( "onClick", "javascript: paperFun()");
+
+    try_again.innerText = '';
 }
 
 function rules() {
